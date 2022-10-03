@@ -76,11 +76,10 @@ body {
   max-height: 0px;
   opacity: 0;
   box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.29);
-  transition: all 1s ease-in;
+  transition: all 0.8s ease-out;
 }
 #nav-mobile-menu--closed ul li {
   cursor: pointer;
-  padding-bottom: 1rem;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 11px;
@@ -88,6 +87,8 @@ body {
   letter-spacing: 3.28px;
   text-transform: uppercase;
   color: #a5a5a5;
+  max-height: 0px;
+  transition: all 0.8s ease-out;
 }
 #nav-mobile-menu--closed ul li:hover,
 #nav-mobile-menu--closed ul .menu-desktop-element-selected {
@@ -97,6 +98,10 @@ body {
   max-height: 100%;
   padding: 2rem;
   opacity: 1;
+}
+#nav-mobile-menu--closed ul.nav-mobile-menu--open li {
+  padding-bottom: 1rem;
+  max-height: 100%;
 }
 
 .container-open-shop {
